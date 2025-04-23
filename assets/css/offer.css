@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Signika:wght@300..700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mainfont:"Signika";
+    --secfont:"Open Sans", sans-serif;
+    --maincColor: rgb(77, 83, 75);
+    --secColor:rgb(181, 217, 165);
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    background-color: rgb(128, 130, 133);
+    opacity:0.80;
+}
+.navbar-item .navbar-nav .dropdown-menu .dropdown-item{
+    font-family: var(--secfont);
+    font-size:13px;
+    font-weight:400;
+}
+.navbar-item .navbar-nav .nav-link{
+    font-family: var(--mainfont);
+    color: rgb(58, 58, 58);
+    font-size: 17px;
+    font-weight: 600;
+    
+}
+
+.navbar-item .navbar-nav .nav-link:hover{
+    color:#50c5bb;
+
+}
+.navbar .navbar-item {
+    position: relative;
+}
+
+.navbar .navbar-item::after{
+    position: absolute;
+    content: "";
+    background-color:black;
+    width: 1.5px;
+    height: 30px;
+    right: -7px;
+    top: 6px;
+}
+.navbar .navbar-item .fa-button{
+    width:20%;
+}
+
+/* start header */ 
+.header .image-header{
+    max-width: 100%;
+    background-image: url('../images/public/services-title-1.jpg');
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+
+@media screen and (max-width:1400px) and (min-width:1200px){
+    .header .image-header{
+       background-position: center top;
+    }
+}
+
+@media screen and (max-width:1190px) and (min-width:768px){
+    .header .image-header{
+        background-attachment: fixed;
+        background-size: cover;
+       background-position: 50%;
+    }
+}
+@media screen and (max-width:762px) and (min-width:400px){
+    .header .image-header h2{
+        font-size:20px;
+        font-weight:400;
+        line-height: 60px;
+    }
+    .header .image-header{
+        background-attachment: fixed;
+        background-size: cover;
+       background-position: 50%;
+    }
+}
+
+.header .image-header h2{
+    font-family: var(--mainfont);
+    color:#3a3a3a;
+    font-size:78px;
+    font-weight:600;
+    line-height: 85.8px;
+}
+.header .image-header p{
+    font-family: var(--secfont);
+    color:#808285;
+    font-size:18px;
+    font-weight:400;
+    line-height: 30px;
+
+}
+/* end header */
+
+/* start row-section */ 
+
+.row-section .item .icon{
+    color: #00bdbb;
+    font-size:33px
+}
+
+.row-section .item .content h3{
+    font-family: var(--mainfont);
+    color:#3a3a3a;
+    font-size:21px;
+    font-weight: 600;
+    line-height: 25px;
+}
+.row-section .item .paragraph p{
+    font-family: var(--secfont);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color:#808285;
+}
+
+/* end row-section  */ 
+    
+/* start services */ 
+
+.services .row .item{
+    width:33%;
+    padding: 5% 5%;
+}
+.services .row .service1{
+    background-color: #eae6e1;
+} 
+
+.services .row .service2{
+    background-color: #f4f1ee;
+} 
+
+.services .row .service3{
+    background-color: #50c5bb;
+    
+} 
+
+.services .row .item .content h3{
+    font-family: var(--mainfont);
+    color:#3a3a3a;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.services .row .item .content p{
+    font-family: var(--secfont);
+    font-size: 15px;
+    font-weight: 400;
+    line-height:26px;
+    color:#808285;
+
+}
+
+/* end services */
+
+/* start About-Us */ 
+
+
+.aboutus .row .left .description h2{
+    font-family:var(--mainfont);
+    font-size: 30px;
+    color: #363636;
+    line-height: 34px;
+    /*text-align: left;*/
+    font-weight:700;
+    font-style:normal;
+}
+.aboutus .row .left .description .paragraph{
+    font-family: var(--secfont);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color:#808285;
+}
+
+.aboutus .row .left .description .button a{
+    padding:12px 32px;
+    background-color: #50c5bb;
+    font-family: var(--mainfont);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19px;
+}
+.aboutus .row .right .image img{
+    width:80%;
+    height: 80%;
+}
+
+
+/*END About Us */ 
+
+/* start image-slider */
+
+
+.image-slider .row .photo img{
+    position:relative;
+    width:16%;
+}
+
+.image-slider .row .photo img:hover{
+
+    transform:scale(1.1);
+    cursor:pointer;
+    color:var(--secColor);
+}
+
+.image-slider .row .photo img::before{
+    content:"";
+    /*background-color:  rgb(0, 189, 187);*/
+    background:linear-gradient(to bottom, rgba(199, 218, 213, 0.5), rgb(204, 205, 200));
+    position:absolute;
+    /*display: block;*/
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    opacity:0;
+    transition:.5s all;
+    }
+
+    .image-slider .row .photo img:hover::before{
+    opacity:1;
+    
+    }
+
+
+/* end image-slider*/
+
+
+
+/* start footer  */
+
+.footer .row {
+    /* background-color: rgb(50, 49, 49);*/
+    background-color:rgb(38, 36, 36);
+     display: flex;
+     justify-content:center;
+ }
+ 
+ .footer .row .col-lg-3 .title .image{
+     margin-bottom: 20px;
+ }
+ 
+ .footer .row .col-lg-3 .paragraph,.number,.address{
+ color: rgb(164, 164, 164) ;
+ }
+ 
+ .footer .row .paragraph{
+     width:80%;
+ }
+ .footer .row .col-lg-3 .form .name{
+ width:100%;
+ margin:0 0 15px;
+ padding:20px 30px;
+ font-size:12px;
+ font-weight: 400;
+ background-color: transparent;
+ }
+ 
+ .footer .row .col-lg-3 .form .email{
+     width:100%;
+     margin:0 0 15px;
+     padding:20px 30px;
+     font-size:12px;
+     font-weight: 400;
+     background-color: transparent;
+     }
+ 
+ .footer .row .col-lg-3 .form .comment{
+     width:100%;
+     margin:0 0 15px;
+     padding:20px 30px;
+     font-size:12px;
+     font-weight: 400;
+     background-color: transparent;
+  }
+ 
+  .footer .row .col-lg-3 .form .submit{
+     background-color:var(--secColor);
+  }
+  .footer .row .col-lg-3 .form .submit:hover{
+     background-color: white;
+     color: #00bdbb;
+  }
+  .footer .row .col-lg-3 .form .submit value:hover{
+     color:black;
+  }
+ 
+ .footer .row .col-lg-3 .form {
+     color:#a4a4a4;
+ }
+ .footer .row .col-lg-3 .icons .icon{
+     color:#a4a4a4;
+ }
+ .footer .row .col-lg-3 .icons .paragraph{
+     color: rgb(164, 164, 164) ;
+ }
+
+/* end footer */

@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Signika:wght@300..700&display=swap');
+
+:root{
+    --mainfont:"Signika";
+    --secfont:"Open Sans", sans-serif;
+    --mainColor: rgb(77, 83, 75);
+    --secColor:rgb(181, 217, 165);
+}
+
+.navbar{
+    background-color: rgb(128, 130, 133);
+}
+.header .row{
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.header .row .title1{
+    width:40%;
+}
+
+.header .row .title1 h3{
+     font-family: var(--mainfont);
+     font-size: 24px;
+     font-weight: 600;
+     color: #3a3a3a;
+}
+.header .row .title2{
+    width: 40%;
+}
+
+.header .row .title2 p{
+  font-family: var(--secfont);
+  font-weight: 400;
+  font-size: 15px;
+  color:#808285;
+}
+
+
+
+/*  Add to cart  */
+.Add-to-cart .row{
+    display: flex;
+    justify-content:space-between;
+}
+.Add-to-cart .row .pictures{
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.Add-to-cart .row .pictures img{
+    max-width: 100%;
+    height: auto;
+}
+
+.Add-to-cart .row .photos{
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.Add-to-cart .row .photos img{
+    max-width: 100%;
+    
+}
+
+.Add-to-cart .row .information .title h1{
+    font-family: var(--mainfont);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color:rgb(58, 58, 58);
+
+}
+
+.Add-to-cart .row .information .price {
+    font-family: var(--mainfont);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px;
+    color:rgb(58, 58, 58);
+}
+
+.Add-to-cart .row .information .paragraph p {
+    font-family: var(--secfont);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgb(128, 130, 133);
+}
+
+.Add-to-cart .row .information .AddtoCart .btn1 button {
+    width:30px;
+}
+
+.Add-to-cart .row .information .AddtoCart .btn1 input {
+    width:40px;
+    text-align: center;
+}
+
+
+.Add-to-cart .row .information .AddtoCart .btn2 button {
+    background-color: #00bdbb;
+}
+
+
+.Add-to-cart .row .information .AddtoCart button a{
+    font-family: var(--mainfont);
+    font-size: 13px;
+    font-weight: 600;
+    cursor:pointer;
+}
+.Add-to-cart .row .information .details span{
+    font-family: var(--mainfont);
+    font-size: 18px;
+    font-weight: 700;
+    color: #3a3a3a;
+}
+
+.Add-to-cart .row .information .details{
+    position:relative;
+}
+
+.Add-to-cart .row .information .details::after{
+    content:"";
+    background-color: var(--mainColor);
+    position:absolute;
+    width:100%;
+    height:1px;
+    bottom:-11px;
+}
+
+.Add-to-cart .row .information .details p{
+    font-family: var(--secfont);
+    font-size: 15px;
+    font-weight: 400;
+    color: #808285;
+}
+.Add-to-cart .row .information .rating{
+    font-size:12px;
+    line-height: 1;
+    letter-spacing:3 px;
+    color:#808285;
+}
+.Add-to-cart .row .information .rating .checked{
+    color:#00bdbb;
+}
+
+.Add-to-cart .row .information .desc p{
+    font-family: var(--mainfont);
+    font-size: 15px;
+    font-weight: 700;
+    color:#3a3a3a;
+    position:relative;
+    cursor:pointer;
+}
+
+.Add-to-cart .row .information .desc p::before{
+    cursor:pointer;
+    content:"+";
+    position:absolute;
+    left:-11px;
+}
+
+.Add-to-cart .row .information .desc{
+    position:relative;
+}
+
+.Add-to-cart .row .information .desc::after{
+    content:"";
+    background-color: var(--mainColor);
+    position:absolute;
+    width:100%;
+    height:1px;
+    bottom:-11px;
+}
+
+.Add-to-cart .row .information .desc-para p{
+    font-family: var(--secfont);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color:#808285;
+    display:none;
+}
+
+.Add-to-cart .row .information .add-info p{
+    font-family: var(--mainfont);
+    font-size: 15px;
+    font-weight: 700;
+    color:#3a3a3a;
+    position:relative;
+    cursor: pointer;
+}
+
+.Add-to-cart .row .information .add-info p::before{
+    cursor:pointer;
+    content:"+";
+    position:absolute;
+    left:-11px;
+}
+
+.Add-to-cart .row .information .add-info{
+    position:relative;
+}
+
+.Add-to-cart .row .information .add-info::after{
+    content:"";
+    background-color: var(--mainColor);
+    position:absolute;
+    width:100%;
+    height:1px;
+    bottom:-11px;
+}
+
+.Add-to-cart .row .information .addInfo-para{
+    display:none;
+}
+
+.Add-to-cart .row .information .addInfo-para span{
+    display:block;
+}
+

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Signika:wght@300..700&display=swap');
+
+:root{
+    --mainfont:"Signika";
+    --secfont:"Open Sans", sans-serif;
+    --mainColor: rgb(77, 83, 75);
+    --secColor:rgb(181, 217, 165);
+}
+
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* header */
+.header{
+    background-image: url('../images/public/about-us-parallax.jpg');
+    background-size: cover;
+    max-width: 100%;
+    background-attachment: fixed;
+    background-position: center top;
+
+}
+
+
+@media screen and (max-width:1400px) and (min-width:1200px){
+    .header{
+       background-position: center bottom;
+    }
+}
+
+@media screen and (max-width:1190px) and (min-width:768px){
+    .header{
+        background-attachment: fixed;
+        background-size: cover;
+       background-position: 70%;
+    }
+}
+
+@media screen and (max-width:762px) and (min-width:400px){
+    .header .title h3{
+        font-family: var(--mainfont);
+        font-size: 40px;
+        font-weight: 300;
+    }
+    .header{
+        background-attachment: fixed;
+        background-size: cover;
+       background-position: 50%;
+    }
+}
+
+.header .title h3{
+    font-family: var(--mainfont);
+    font-size: 78px;
+    font-weight: 600;
+    color:rgb(255, 255, 255)
+}
+
+.header .paragraph p{
+    font-family: var(--secfont);
+    font-size: 18px;
+    font-weight: 400;
+    color:rgb(255, 255, 255)
+}
+
+
+/* end-header */
+
+
+/* start details */
+
+.details{
+    background-color:#e2e3e7;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.details .row h3{
+    font-family: var(--mainfont);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    transition-duration: .5s;
+}
+.details .row .image img{
+    
+}
+.details .row h3:hover{
+    color:rgb(8, 171, 170);
+    cursor:pointer;
+}
+
+.details .row p{
+    font-family: var(--secfont);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    color:rgb(128,130,133);
+}
+
+/* start of Numbers  */  
+.numbers .backimage{
+    background-image: url(../images/public/tea-home-parallax.jpg);
+    background-size: cover;
+    max-width: 100%;
+    background-attachment: fixed;
+    background-position: center left right;
+    padding-top:200px;
+    padding-bottom: 80px;
+
+}
+
+.numbers .item .detail span{
+    color:#ffff;
+    font-family: var(--mainfont);
+    font-size:44px;
+    font-weight: 600;
+    line-height: 1em;
+    height: 1em;
+}
+
+.numbers .item .detail h4{
+    color:#ffff;
+    font-family: var(--mainfont);
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+/* end of numbers */
+
+/* start of carousel */ 
+
+.employees{
+    padding-top:100px;
+    padding-bottom: 100px;
+    background-color:#f5f6f9;
+}
+
+.employees .carousel-inner .carousel-item .row .col-xxl-4{
+    max-width:30%;
+    min-height: 30%;
+}
+
+@media screen and (max-width:990px) and (min-width:762px){
+    .employees .carousel-item .para p {
+        font-size: 13px;
+        line-height: 20px;
+}
+.employees .carousel-inner .carousel-item .row .col-xxl-4 {
+    max-width: 33%;
+}
+}
+
+
+.employees .carousel-item .employee-info h3{
+    font-family: var(--mainfont);
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+    color:rgb(58,58,58);
+
+}
+
+.employees .carousel-item .employee-info span{
+    font-family: var(--secfont);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color:rgb(128,130,133);
+
+}
+
+.employees .carousel-item .para p{
+    font-family: var(--secfont);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color:#808285;
+
+}
+.employees .title-employees .title-info h1{
+    color: rgb(58, 58, 58);
+    font-family: var(--mainfont);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.employees .title-employees .title-info p{
+    color: rgb(128, 130, 133);
+    font-family: var(--secfont);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.carousel-indicators [data-bs-target]{
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    border:1px solid var(--maincColor);
+    background-color: transparent;
+}
+
+.carousel-indicators{
+    bottom:-60px;
+}
+
+.carousel-indicators .active{
+    background-color: var(--maincColor);
+}
+
+/* end-of-carousel */
+
+/* start of special-team */ 
+.special-team .title-inner .title-info h1{
+    color: rgb(58, 58, 58);
+    font-family: var(--mainfont);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.special-team .title-inner .title-info p{
+    color: rgb(128, 130, 133);
+    font-family: var(--secfont);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.special-team .row .team-info h4{
+    font-family: var(--mainfont);
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    color:rgb(58, 58, 58);
+}
+
+.special-team .row .team-info h6{
+    font-family: var(--secfont);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color:rgb(128, 130, 133);
+    margin: -10px 0 0; 
+}
+
+.special-team .row .team-info p{
+    font-family: var(--secfont);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    color:#808285;
+}
+
+.special-team .row .team-info .team-social i{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.special-team .row .team-info .team-social i:hover{
+    color: rgb(22, 139, 138);
+    cursor: pointer;
+}
+/* end of special-team */
